@@ -1,0 +1,137 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: #eaeaea;
+  color: #333;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Playfair Display', serif;
+}
+h1{
+  font-size: 3em;
+  text-align: center;
+}
+a{
+  color: #333;
+  transition: color .1s;
+}
+a:visited{
+  color: #777;
+}
+a:hover{
+  color: #36b1bb;
+}
+
+.head-font{
+  font-family: 'Playfair Display', serif;
+  display: block;
+  font-size: 1.35em;
+  margin: 1em 0;
+}
+
+.subheader{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  max-width: 60vw;
+}
+
+.desc{
+  display: block;
+  max-width: 60vw;
+}
+
+.hover-underline:hover{
+  text-decoration: underline;
+  cursor: default;
+}
+
+.medias{
+  font-size: 1.5em;
+  margin: 1.6em 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.media-link{
+  flex: 0 0 auto;
+  background: limegreen;
+  padding: .5em .7em;
+  border-radius: .1em;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: .4em solid darkgreen;
+  transition: background-color .1s, border .1s;
+}
+.media-link:hover{
+  background: darkgreen;
+  border-bottom-width: 0;
+}
+.media-link, .media-link:hover, .media-link:visited{
+  color: white;
+}
+
+.media-link.ig{
+  background: #e4405f;
+  border-bottom-color: #a81c36;
+}
+.media-link.ig:hover{
+  background: #a81c36;
+}
+.media-link.gh{
+  background: #444;
+  border-bottom-color: #222;
+}
+.media-link.gh:hover{
+  background: #222;
+}
+
+.skills{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 0;
+}
+.skill-item{
+  flex: 0 0 auto;
+  padding: .5em .7em;
+  border-radius: .2em;
+  color: white;
+  list-style: none;
+  margin-right: .4em;
+  margin-top: .4em;
+  transition: background-color .1s;
+  cursor: default;
+}
+.skill-item:nth-child(3n){
+  background: #333;
+}
+.skill-item:nth-child(3n):hover{
+  background: #222;
+}
+.skill-item:nth-child(3n+1){
+  background: #3794bf;
+}
+.skill-item:nth-child(3n+1):hover{
+  background: #2983ac;
+}
+.skill-item:nth-child(3n+2){
+  background: #e4405f;
+}
+.skill-item:nth-child(3n+2):hover{
+  background: #d72e4d;
+}
+
+
+@media screen and (max-width: 720px){
+  .desc{
+    max-width: 85vw;
+  }
+  .subheader{
+    max-width: 85vw;
+  }
+}
